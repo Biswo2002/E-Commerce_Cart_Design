@@ -1,7 +1,7 @@
 import { extendTheme } from "native-base";
 
 export const COLORS = {
-    PRIMARY: '#0165FF',
+    PRIMARY: '#0B0D34',
     SECONDARY: '#fff',
   };
 
