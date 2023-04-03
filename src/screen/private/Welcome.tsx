@@ -26,11 +26,11 @@ const Welcome = () => {
     },
     {
       id: '3',
-      img: 'https://assets9.lottiefiles.com/packages/lf20_pm5qdb4j.json',
+      img: 'https://assets6.lottiefiles.com/packages/lf20_jei6otjn.json',
     },
     {
       id: '2',
-      img: 'https://assets9.lottiefiles.com/packages/lf20_pm5qdb4j.json',
+      img: 'https://assets6.lottiefiles.com/packages/lf20_5ngs2ksb.json',
     },
   ]
   const { navigate } = useNavigation<PrivateNavigationProps>();
@@ -198,25 +198,6 @@ const Welcome = () => {
       </Pressable>
     </Box>
   )
-
-  // <Box bgColor={COLORS.SECONDARY} flex={'1'} >
-  //   <StatusBar backgroundColor={COLORS.PRIMARY} />
-
-  //   <Box
-  //     bgColor={COLORS.PRIMARY}
-  //     height={'50%'} >
-  //     <Box bgColor={'#ffff'}
-  //       height={'100%'}
-  //       borderBottomRightRadius={'90'} >
-  //       <LottieView
-  //         source={{ uri: 'https://assets9.lottiefiles.com/packages/lf20_pm5qdb4j.json' }}
-  //         autoPlay
-  //         loop={true}
-  //       />
-  //     </Box>
-  //   </Box>
-
-  // </Box>
 }
 
 export default Welcome
