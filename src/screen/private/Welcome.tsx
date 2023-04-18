@@ -32,6 +32,10 @@ const Welcome = () => {
       id: '2',
       img: 'https://assets6.lottiefiles.com/packages/lf20_5ngs2ksb.json',
     },
+    {
+      id: '2.1',
+      img: 'https://assets6.lottiefiles.com/packages/lf20_IcvJ1B.json',
+    },
   ]
   const { navigate } = useNavigation<PrivateNavigationProps>();
   const renderFlatListItem = ({ item }: any) => {
@@ -39,11 +43,10 @@ const Welcome = () => {
       <ScrollView showsVerticalScrollIndicator={false} >
         <Box
           bgColor={COLORS.PRIMARY}
-        // borderBottomRadius={'full'}
         >
           <Box bgColor={'#ffff'}
             width={Dimensions.get('window').width / 1}
-            height={Dimensions.get('window').height / 2.1}
+            height={Dimensions.get('window').height / 1.9}
             borderBottomRadius={'70'}
           >
             <LottieView
@@ -55,7 +58,6 @@ const Welcome = () => {
           <HStack
             justifyContent={'center'}
             p={3}
-            mt={5}
           >
             {
               // No. of dots
@@ -63,13 +65,13 @@ const Welcome = () => {
                 <View
                   key={index}
                   style={{
-                    width: index == currentPage ? 50 : 12,
-                    height: 12,
+                    width: index == currentPage ? 45 : 8,
+                    height: 8,
                     borderRadius: 200,
                     backgroundColor:
                       index == currentPage
                         ? '#ffff'
-                        : '#ffff' + '200',
+                        : '#ffff',
                     marginRight: 15,
                   }}
                 />
@@ -94,7 +96,7 @@ const Welcome = () => {
         ref={flatlistRef}
         initialNumToRender={1}
         onViewableItemsChanged={handleViewableItemsChanged.current}
-        viewabilityConfig={{ viewAreaCoveragePercentThreshold: 50 }}
+        viewabilityConfig={{ viewAreaCoveragePercentThreshold: 10 }}
       />
       <Box
         justifyContent={'center'}
