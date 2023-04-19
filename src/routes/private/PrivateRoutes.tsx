@@ -15,7 +15,6 @@ const PrivateRoutes = () => {
       }}>
       <Stack.Screen name={'Welcome'} component={Welcome} />
       <Stack.Screen name={'Account'} component={Account} />
-
     </Stack.Navigator>
   )
 }
